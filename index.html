@@ -1,15 +1,14 @@
 <!doctype html>
 <!--
-  ═════════════════════════════════════════════════════════════
   WEB – ADAM SOMORA
   Súbory: index.html (obsah) · styles.css (vzhľad) · script.js (správanie)
 
-  AKO UPRAVOVAŤ
   • Texty prepisuj priamo tu. Hranaté zátvorky [ ] = doplň skutočný údaj.
+  • Sekcie hľadaj podľa komentárov, napr. „5. CENNÍK".
   • Šrafované rámiky (class="ph ...") sú miesta pre videá a fotky.
     Celý blok <div class="ph ...">…</div> nahraď skutočným médiom:
 
-      VIDEO (hero, stlmené v slučke):
+      VIDEO (showreel, stlmené v slučke):
       <video class="media" style="aspect-ratio:16/9" src="video/showreel.mp4"
              poster="img/showreel.jpg" autoplay muted loop playsinline></video>
 
@@ -21,27 +20,22 @@
       <img class="media" style="aspect-ratio:4/5" src="img/adam.jpg"
            alt="Adam Somora na natáčaní" loading="lazy">
 
-  • Žlté poznámky s princípmi vypneš tak, že z <html> nižšie zmažeš
-    class="notes-on" a vymažeš tlačidlo „Poznámky" na konci súboru.
-  • Formulár: doplň URL z formspree.io do script.js (FORM_ENDPOINT)
-    aj do <form action="..."> v sekcii KONTAKT.
-  ═════════════════════════════════════════════════════════════
+  • Texty projektov sú dvakrát: v zozname a v okne s detailom (<dialog>). Uprav oboje.
+  • Formulár: URL z formspree.io doplň do script.js (FORM_ENDPOINT) aj do <form action="...">.
 -->
-<html lang="sk" class="notes-on">
+<html lang="sk">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adam Somora · Firemné video Bratislava</title>
+    <title>Adam Somora – firemné video, Bratislava</title>
     <meta
       name="description"
-      content="Firemné, náborové a produktové videá v televíznej kvalite. Kameraman a strihač s praxou z TV Markíza. Bratislava a celé Slovensko."
+      content="Firemné, náborové a produktové videá. Kameraman a strihač s praxou z TV Markíza. Bratislava a celé Slovensko."
     />
-    <meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#121211" media="(prefers-color-scheme: dark)" />
-    <meta property="og:title" content="Adam Somora · Firemné video Bratislava" />
+    <meta property="og:title" content="Adam Somora – firemné video, Bratislava" />
     <meta
       property="og:description"
-      content="Firemné, náborové a produktové videá v televíznej kvalite. Kameraman a strihač s praxou z TV Markíza. Bratislava a celé Slovensko."
+      content="Firemné, náborové a produktové videá. Kameraman a strihač s praxou z TV Markíza. Bratislava a celé Slovensko."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="img/og.jpg" />
@@ -57,7 +51,7 @@
         "@context": "https://schema.org",
         "@type": "ProfessionalService",
         "name": "Adam Somora",
-        "description": "Firemné, náborové a produktové videá v televíznej kvalite. Kameraman a strihač s praxou z TV Markíza. Bratislava a celé Slovensko.",
+        "description": "Firemné, náborové a produktové videá. Kameraman a strihač s praxou z TV Markíza. Bratislava a celé Slovensko.",
         "areaServed": ["Bratislava", "Slovensko"],
         "address": { "@type": "PostalAddress", "addressLocality": "Bratislava", "addressCountry": "SK" },
         "priceRange": "€€"
@@ -78,8 +72,8 @@
       <div class="container header-inner">
         <a href="#top" class="brand"><span class="rec-dot" aria-hidden="true"></span>Adam Somora</a>
         <nav class="nav" aria-label="Hlavná navigácia">
-          <a href="#prace">Práce</a><a href="#ponuka">Ponuka</a><a href="#postup">Postup</a
-          ><a href="#o-mne">O mne</a><a href="#otazky">Otázky</a>
+          <a href="#prace">Projekty</a><a href="#ponuka">Cenník</a><a href="#postup">Postup</a
+          ><a href="#o-mne">O mne</a>
         </nav>
         <button
           class="theme-toggle"
@@ -92,9 +86,7 @@
             <path d="M10 2.75a7.25 7.25 0 0 1 0 14.5z" fill="currentColor"></path>
           </svg>
         </button>
-        <a href="#kontakt" class="btn btn-primary btn-sm"
-          ><span class="cta-long">Získať ponuku do 24 h</span><span class="cta-short">Získať ponuku</span></a
-        >
+        <a href="#kontakt" class="btn btn-primary btn-sm">Získať ponuku</a>
       </div>
     </header>
 
@@ -102,96 +94,50 @@
       <!-- ───────── 1. HERO ───────── -->
       <section class="hero">
         <div class="container">
-          <p class="eyebrow">Firemné video · Bratislava a okolie</p>
+          <p class="kicker">Firemné video v Bratislave a okolí</p>
           <h1 class="display hero-title">Vypnite zvuk. Pochopí divák aj tak, čo predávate?</h1>
           <div class="hero-row">
             <p class="lead">
-              Som Adam Somora, kameraman a strihač s praxou z TV Markíza. Robím firemné videá v televíznej
-              kvalite, ktoré fungujú aj bez zvuku, aj bez loga na začiatku. Scenár, natáčanie aj strih
-              zariadim ja. Vy si vyhradíte jeden deň.
+              Som Adam Somora. Točil som pre TV Markíza, dnes robím videá pre firmy. Scenár, natáčanie aj
+              strih mám na starosti ja, od vás potrebujem jeden deň.
             </p>
             <div class="hero-ctas">
-              <a href="#kontakt" class="btn btn-primary">Získať ponuku do 24 h</a>
-              <a href="#prace" class="btn btn-ghost">Pozrieť práce</a>
+              <a href="#kontakt" class="btn btn-primary">Získať ponuku</a>
+              <a href="#prace" class="link-arrow">Pozrieť projekty <span aria-hidden="true">↓</span></a>
             </div>
           </div>
-          <aside class="note">
-            <span class="note-tag">Háčik · inšpirácia dotoonystudio.sk</span>
-            <span class="note-text">
-              Otázka namiesto sľubu. Klient si v duchu odpovie „asi nie" a sám si pomenuje problém. Funguje aj
-              ako pravda o videu: väčšina ľudí pozerá na sociálnych sieťach bez zvuku.
-            </span>
-          </aside>
-          <aside class="note">
-            <span class="note-tag">Hormozi · Value Equation</span>
-            <span class="note-text">
-              Lead nesie vysnený výsledok (TV kvalita), pravdepodobnosť (Markíza), námahu („vy si vyhradíte
-              jeden deň") a čas (10 dní vo faktoch nižšie).
-            </span>
-          </aside>
         </div>
 
-        <div class="container hero-media">
-          <div class="viewfinder">
-            <!-- SHOWREEL: tento <div class="ph ..."> nahraď <video ... autoplay muted loop playsinline> (návod hore) -->
-            <div
-              class="ph ph-video"
-              style="aspect-ratio: 16/9"
-              role="img"
-              aria-label="Miesto pre: Showreel – tvoje najlepšie zábery"
-            >
-              <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-              ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-              <div class="ph-body">
-                <span class="ph-kind">VIDEO</span>
-                <span class="ph-label">Showreel – tvoje najlepšie zábery</span>
-                <span class="ph-spec">15–30 s · bez zvuku · 16:9 · MP4 H.264 &lt; 5 MB · loop</span>
-              </div>
-            </div>
-            <div class="vf-overlay" aria-hidden="true">
-              <span class="vf-rec"><span class="rec-dot"></span>REC</span>
-              <span class="vf-tc" data-timecode>00:00:00:00</span>
-              <span class="vf-meta">4K · 25p · ISO 800</span>
-            </div>
-          </div>
-          <aside class="note">
-            <span class="note-tag">Apple · Deference</span>
-            <span class="note-text">
-              Obsah je hrdina. Rozhranie okolo videa je tiché, žiadne efekty navyše. Overlay hľadáčika je
-              jediný „ozdobný" prvok a hovorí o remesle.
-            </span>
-          </aside>
+        <!-- SHOWREEL: placeholder nahraď <video ... autoplay muted loop playsinline> -->
+        <figure class="reel">
+          <div class="reel-frame">
+          <video class="media" style="aspect-ratio: 16/9" src="video/showreel.mp4" poster="img/showreel.jpg" autoplay muted loop playsinline data-reel></video>
+          <button class="sound-toggle" type="button" data-sound aria-pressed="false">Zapnúť zvuk</button>
         </div>
+          <figcaption class="container reel-caption">
+            <span>Showreel 2026</span>
+            <span class="muted">Scenár, kamera a strih: Adam Somora</span>
+          </figcaption>
+        </figure>
 
         <div class="container">
           <ul class="facts">
+            <li><span class="fact-value">(X)</span> <span class="fact-label">rokov za kamerou</span></li>
             <li>
-              <span class="fact-value display">[X]<small>rokov</small></span>
-              <span class="fact-label">za kamerou, z toho [X] v televízii</span>
+              <span class="fact-value">(50+)</span> <span class="fact-label">odovzdaných projektov</span>
             </li>
             <li>
-              <span class="fact-value display">[50]+<small>projektov</small></span>
-              <span class="fact-label">natočených a odovzdaných</span>
-            </li>
-            <li>
-              <span class="fact-value display">10<small>prac. dní</small></span>
-              <span class="fact-label">od natáčania po finálne video</span>
+              <span class="fact-value">(10)</span>
+              <span class="fact-label">pracovných dní do finálnej verzie</span>
             </li>
           </ul>
-          <aside class="note">
-            <span class="note-tag">Yablonski · Millerov zákon</span>
-            <span class="note-text">
-              Tri fakty, nie osem. Ľudia si zapamätajú malé skupiny. Roky a počet projektov dopĺňaj len
-              pravdivo, aj menšie číslo je lepšie než nafúknuté.
-            </span>
-          </aside>
         </div>
       </section>
 
-      <!-- ───────── 2. SOCIÁLNY DÔKAZ ───────── -->
+      <!-- ───────── 2. KLIENTI ───────── -->
       <section class="proof" aria-label="Klienti">
         <div class="container proof-inner">
-          <p class="proof-label">Pracoval som pre a s</p>
+          <p class="proof-label">Spolupracoval som s</p>
           <ul class="proof-logos">
             <li>
               <div
@@ -270,208 +216,150 @@
             </li>
           </ul>
         </div>
-        <div class="container">
-          <aside class="note">
-            <span class="note-tag">Pozor · právo</span>
-            <span class="note-text">
-              Logo Markízy použi len s písomným súhlasom. Bez neho stačí text „Prax z produkcií TV Markíza".
-              Logá klientov tiež len so súhlasom.
-            </span>
-          </aside>
-        </div>
       </section>
 
       <!-- ───────── 3. PROBLÉM ───────── -->
       <section class="section">
-        <div class="container narrow">
-          <h2 class="display h2">
-            Firemné video zriedka zlyhá na technike. Zlyhá na tom, že ho nikto nedopozerá.
-          </h2>
-          <p class="lead muted">Štyri dôvody, ktoré vidím najčastejšie.</p>
-        </div>
-        <div class="container">
+        <div class="container split">
+          <div>
+            <h2 class="display h2">Kde firemné videá strácajú divákov</h2>
+            <p class="lead muted">Štyri chyby, ktoré vidím najčastejšie, a čo s nimi robím.</p>
+          </div>
           <ol class="problem-list">
             <li>
-              <span class="problem-top"
-                ><span class="mono idx">01</span><em class="problem-tag">strata pozornosti</em></span
-              >
-              <p class="bad">Začínajú logom a hudbou.</p>
-              <p class="good">Prvých 5 sekúnd rozhodne. Začínam tým, čo divák získa.</p>
+              <span class="num">01</span>
+              <div>
+                <h3>Logo a hudba na začiatku</h3>
+                <p class="muted">
+                  Prvých päť sekúnd rozhodne, či divák ostane. Video otváram tým, čo divák získa.
+                </p>
+              </div>
             </li>
             <li>
-              <span class="problem-top"
-                ><span class="mono idx">02</span><em class="problem-tag">bez cieľa</em></span
-              >
-              <p class="bad">Vznikajú bez zadania.</p>
-              <p class="good">Pred natáčaním určíme jednu vec, ktorú má divák po videu urobiť.</p>
+              <span class="num">02</span>
+              <div>
+                <h3>Žiadne zadanie</h3>
+                <p class="muted">
+                  Pred natáčaním si určíme jednu vec, ktorú má divák po videu urobiť. Podľa nej sa strihá.
+                </p>
+              </div>
             </li>
             <li>
-              <span class="problem-top"
-                ><span class="mono idx">03</span><em class="problem-tag">zameniteľnosť</em></span
-              >
-              <p class="bad">Vyzerajú ako všetky ostatné.</p>
-              <p class="good">Svetlo, zvuk a strih z televíznej praxe, ktoré udržia pozornosť.</p>
+              <span class="num">03</span>
+              <div>
+                <h3>Vyzerá ako každé iné</h3>
+                <p class="muted">
+                  Svetlo, zvuk a tempo strihu si nesiem z televízie. Na tom sa pozornosť drží najdlhšie.
+                </p>
+              </div>
             </li>
             <li>
-              <span class="problem-top"
-                ><span class="mono idx">04</span><em class="problem-tag">jeden formát</em></span
-              >
-              <p class="bad">Jedno video na všetko.</p>
-              <p class="good">Z jedného natáčania pripravím verzie pre web, LinkedIn aj reklamu na výšku.</p>
+              <span class="num">04</span>
+              <div>
+                <h3>Jedna verzia na všetko</h3>
+                <p class="muted">
+                  Z jedného natáčania pripravím verziu na web, na LinkedIn aj na výšku do reklamy.
+                </p>
+              </div>
             </li>
           </ol>
-          <aside class="note">
-            <span class="note-tag">Hormozi · pomenuj bolesť</span>
-            <span class="note-text">
-              Klient sa má nájsť v probléme skôr, než uvidí cenu. Každý bod má hneď riešenie, aby text
-              nepôsobil negatívne. Kurzívové štítky (ako na dotoonystudio.sk) umožnia prečítať sekciu za 3
-              sekundy.
-            </span>
-          </aside>
         </div>
       </section>
 
-      <!-- ───────── 4. PRÁCE / CASE STUDIES ───────── -->
+      <!-- ───────── 4. PROJEKTY ───────── -->
       <section class="section section-alt" id="prace">
         <div class="container">
-          <div class="section-head">
-            <h2 class="display h2">Vybrané práce</h2>
-            <p class="lead muted">Každé video malo konkrétny cieľ. Tu je, čo prinieslo.</p>
-          </div>
+          <h2 class="display h2 section-title">Vybrané projekty</h2>
 
-          <div class="cases">
-            <article class="case case-lead">
-              <button
-                class="case-open"
-                type="button"
-                data-case-open="0"
-                aria-label="Otvoriť projekt: [Ako sme firme pomohli nájsť ľudí do výroby]"
-              >
-                <div
-                  class="ph ph-video"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Náborové video: [Názov klienta]"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">VIDEO</span>
-                    <span class="ph-label">Náborové video: [Názov klienta]</span>
-                    <span class="ph-spec">16:9 · 60–120 s · poster JPG 1600 px</span>
-                  </div>
-                </div>
-                <span class="case-open-hint mono">Otvoriť projekt · 6 ukážok</span>
-              </button>
-              <div class="case-body">
-                <p class="case-meta mono">[Výroba / priemysel] · Náborové video</p>
+          <!-- Hlavný projekt -->
+          <article class="case-lead">
+            <button
+              class="case-open"
+              type="button"
+              data-case-open="0"
+              aria-label="Otvoriť projekt: [Ako sme firme pomohli nájsť ľudí do výroby]"
+            >
+              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt1-nahlad.mp4" poster="img/projekt1.jpg" autoplay muted loop playsinline></video>
+            </button>
+            <div class="case-lead-body">
+              <div>
+                <p class="tags">Scenár, Natáčanie, Strih, Color</p>
                 <h3 class="case-title">[Ako sme firme pomohli nájsť ľudí do výroby]</h3>
-                <dl class="case-dl">
-                  <div>
-                    <dt>Problém</dt>
-                    <dd>[Inzeráty bez odozvy, 3 mesiace neobsadené pozície.]</dd>
-                  </div>
-                  <div>
-                    <dt>Riešenie</dt>
-                    <dd>[90-s video priamo z dielne, hovoria skutoční zamestnanci.]</dd>
-                  </div>
-                </dl>
-                <p class="case-result">
-                  <span class="display">[+X %]</span>
-                  <span>[prihlášok za prvých 30 dní]</span>
-                </p>
+                <p class="muted">[Názov klienta], 2026</p>
               </div>
-            </article>
-            <article class="case">
-              <button
-                class="case-open"
-                type="button"
-                data-case-open="1"
-                aria-label="Otvoriť projekt: [Produkt, ktorý treba vidieť v akcii]"
-              >
-                <div
-                  class="ph ph-video"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Produktové video: [Názov klienta]"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">VIDEO</span>
-                    <span class="ph-label">Produktové video: [Názov klienta]</span>
-                    <span class="ph-spec">16:9 + 9:16 · 30–60 s</span>
-                  </div>
+              <dl class="case-dl">
+                <div>
+                  <dt>Problém</dt>
+                  <dd>[Inzeráty bez odozvy, 3 mesiace neobsadené pozície.]</dd>
                 </div>
-                <span class="case-open-hint mono">Otvoriť projekt · 4 ukážok</span>
-              </button>
-              <div class="case-body">
-                <p class="case-meta mono">[E-shop / produkt] · Produktové video</p>
-                <h3 class="case-title">[Produkt, ktorý treba vidieť v akcii]</h3>
-                <dl class="case-dl">
-                  <div>
-                    <dt>Problém</dt>
-                    <dd>[Zákazníci nechápali, ako produkt funguje.]</dd>
-                  </div>
-                  <div>
-                    <dt>Riešenie</dt>
-                    <dd>[45-s ukážka + 3 vertikálne verzie do reklamy.]</dd>
-                  </div>
-                </dl>
-                <p class="case-result">
-                  <span class="display">[X %]</span>
-                  <span>[vyššia konverzia produktovej stránky]</span>
-                </p>
-              </div>
-            </article>
-            <article class="case">
-              <button
-                class="case-open"
-                type="button"
-                data-case-open="2"
-                aria-label="Otvoriť projekt: [Názov tvojho projektu]"
-              >
-                <div
-                  class="ph ph-video"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Autorská tvorba: Vlastný projekt"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">VIDEO</span>
-                    <span class="ph-label">Autorská tvorba: Vlastný projekt</span>
-                    <span class="ph-spec">16:9 · ukážka 30–60 s</span>
-                  </div>
+                <div>
+                  <dt>Riešenie</dt>
+                  <dd>[90-sekundové video priamo z dielne, hovoria skutoční zamestnanci.]</dd>
                 </div>
-                <span class="case-open-hint mono">Otvoriť projekt · 8 ukážok</span>
-              </button>
-              <div class="case-body">
-                <p class="case-meta mono">[Dokument / krátky film] · Autorská tvorba</p>
-                <h3 class="case-title">[Názov tvojho projektu]</h3>
-                <dl class="case-dl">
-                  <div>
-                    <dt>Problém</dt>
-                    <dd>[O čom to je, jednou vetou.]</dd>
-                  </div>
-                  <div>
-                    <dt>Riešenie</dt>
-                    <dd>[Čím je zaujímavý: štýl, téma, prístup.]</dd>
-                  </div>
-                </dl>
-                <p class="case-result">
-                  <span class="display">[X tis.]</span>
-                  <span>[videní / výber na festival / ocenenie]</span>
-                </p>
-              </div>
-            </article>
-          </div>
+              </dl>
+              <p class="case-result">
+                <span class="display">[+X %]</span>
+                <span>[prihlášok za prvých 30 dní]</span>
+              </p>
+            </div>
+          </article>
 
-          <!-- Detail projektu (modálne okno, šípky ← → prepínajú projekty, Esc zatvorí) -->
+          <!-- Zoznam ďalších projektov (klik otvorí detail) -->
+          <ol class="case-index">
+            <li>
+              <button class="case-row" type="button" data-case-open="1">
+                <span class="row-thumb" aria-hidden="true">
+                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt2.jpg" alt="" loading="lazy" />
+                </span>
+                <span class="row-name">[Produkt, ktorý treba vidieť v akcii]</span>
+                <span class="row-client muted">[Názov klienta]</span>
+                <span class="tags row-tags">Natáčanie, Strih, 9:16 verzie</span>
+                <span class="row-year muted">2026</span>
+                <span class="row-arrow" aria-hidden="true">→</span>
+              </button>
+            </li>
+            <li>
+              <button class="case-row" type="button" data-case-open="2">
+                <span class="row-thumb" aria-hidden="true">
+                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt3.jpg" alt="" loading="lazy" />
+                </span>
+                <span class="row-name">[Konferencia / otvorenie / firemné podujatie]</span>
+                <span class="row-client muted">[Názov klienta]</span>
+                <span class="tags row-tags">Natáčanie, Strih, Sociálne siete</span>
+                <span class="row-year muted">2025</span>
+                <span class="row-arrow" aria-hidden="true">→</span>
+              </button>
+            </li>
+            <li>
+              <button class="case-row" type="button" data-case-open="3">
+                <span class="row-thumb" aria-hidden="true">
+                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt4.jpg" alt="" loading="lazy" />
+                </span>
+                <span class="row-name">[Séria krátkych rozhovorov na LinkedIn]</span>
+                <span class="row-client muted">[Názov klienta]</span>
+                <span class="tags row-tags">Rozhovory, Strih, Titulky</span>
+                <span class="row-year muted">2025</span>
+                <span class="row-arrow" aria-hidden="true">→</span>
+              </button>
+            </li>
+            <li>
+              <button class="case-row" type="button" data-case-open="4">
+                <span class="row-thumb" aria-hidden="true">
+                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt5.jpg" alt="" loading="lazy" />
+                </span>
+                <span class="row-name">[Názov tvojho projektu]</span>
+                <span class="row-client muted">Vlastný projekt</span>
+                <span class="tags row-tags">Réžia, Kamera, Strih</span>
+                <span class="row-year muted">2024</span>
+                <span class="row-arrow" aria-hidden="true">→</span>
+              </button>
+            </li>
+          </ol>
+
+          <!-- Detail projektu (← → prepínajú projekty, Esc zatvorí) -->
           <dialog class="case-modal" data-case-modal aria-label="Detail projektu">
             <div class="cm-bar">
-              <p class="mono" data-cm-count>1 / 3</p>
+              <p class="muted" data-cm-count>1 / 5</p>
               <div class="cm-nav">
                 <button type="button" class="cm-btn" data-cm-prev aria-label="Predchádzajúci projekt">
                   ←
@@ -481,23 +369,10 @@
               </div>
             </div>
             <section class="cm-slide" data-cm-slide="0" hidden>
-              <div
-                class="ph ph-video"
-                style="aspect-ratio: 16/9"
-                role="img"
-                aria-label="Miesto pre: Celé video: [Názov klienta]"
-              >
-                <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                <div class="ph-body">
-                  <span class="ph-kind">VIDEO</span>
-                  <span class="ph-label">Celé video: [Názov klienta]</span>
-                  <span class="ph-spec">16:9 · prehrávanie po kliknutí · Vimeo / R2 / Bunny</span>
-                </div>
-              </div>
+              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt1.mp4" poster="img/projekt1.jpg" preload="none" controls playsinline></video>
               <div class="cm-body">
                 <div>
-                  <p class="case-meta mono">[Výroba / priemysel] · Náborové video</p>
+                  <p class="tags">Scenár, Natáčanie, Strih, Color</p>
                   <h3 class="cm-title display">[Ako sme firme pomohli nájsť ľudí do výroby]</h3>
                   <p class="cm-story">
                     [Ľudský detail z natáčania. Napr.: Deň pred natáčaním som strávil zmenu priamo na linke,
@@ -506,12 +381,16 @@
                 </div>
                 <dl class="case-dl">
                   <div>
+                    <dt>Klient</dt>
+                    <dd>[Názov klienta], 2026</dd>
+                  </div>
+                  <div>
                     <dt>Problém</dt>
                     <dd>[Inzeráty bez odozvy, 3 mesiace neobsadené pozície.]</dd>
                   </div>
                   <div>
                     <dt>Riešenie</dt>
-                    <dd>[90-s video priamo z dielne, hovoria skutoční zamestnanci.]</dd>
+                    <dd>[90-sekundové video priamo z dielne, hovoria skutoční zamestnanci.]</dd>
                   </div>
                   <div>
                     <dt>Výsledok</dt>
@@ -520,118 +399,36 @@
                 </dl>
               </div>
               <div class="cm-gallery">
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 9/16"
-                  role="img"
-                  aria-label="Miesto pre: Záber 1"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 1</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 2"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 2</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 3"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 3</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 9/16"
-                  role="img"
-                  aria-label="Miesto pre: Záber 4"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 4</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 5"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 5</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 6"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 6</span>
-                  </div>
-                </div>
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt1-zaber1.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber2.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber3.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt1-zaber4.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber5.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber6.jpg" alt="" loading="lazy" />
               </div>
             </section>
             <section class="cm-slide" data-cm-slide="1" hidden>
-              <div
-                class="ph ph-video"
-                style="aspect-ratio: 16/9"
-                role="img"
-                aria-label="Miesto pre: Celé video: [Názov klienta]"
-              >
-                <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                <div class="ph-body">
-                  <span class="ph-kind">VIDEO</span>
-                  <span class="ph-label">Celé video: [Názov klienta]</span>
-                  <span class="ph-spec">16:9 · prehrávanie po kliknutí · Vimeo / R2 / Bunny</span>
-                </div>
-              </div>
+              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt2.mp4" poster="img/projekt2.jpg" preload="none" controls playsinline></video>
               <div class="cm-body">
                 <div>
-                  <p class="case-meta mono">[E-shop / produkt] · Produktové video</p>
+                  <p class="tags">Natáčanie, Strih, 9:16 verzie</p>
                   <h3 class="cm-title display">[Produkt, ktorý treba vidieť v akcii]</h3>
                   <p class="cm-story">
-                    [Detail, ktorý ukáže tvoj prístup. Napr.: Produkt som si najprv sám vyskúšal, aby som
-                    vedel, čo zákazník potrebuje vidieť.]
+                    [Napr.: Produkt som si najprv sám vyskúšal, aby som vedel, čo zákazník potrebuje vidieť.]
                   </p>
                 </div>
                 <dl class="case-dl">
+                  <div>
+                    <dt>Klient</dt>
+                    <dd>[Názov klienta], 2026</dd>
+                  </div>
                   <div>
                     <dt>Problém</dt>
                     <dd>[Zákazníci nechápali, ako produkt funguje.]</dd>
                   </div>
                   <div>
                     <dt>Riešenie</dt>
-                    <dd>[45-s ukážka + 3 vertikálne verzie do reklamy.]</dd>
+                    <dd>[45-sekundová ukážka a tri vertikálne verzie do reklamy.]</dd>
                   </div>
                   <div>
                     <dt>Výsledok</dt>
@@ -640,85 +437,95 @@
                 </dl>
               </div>
               <div class="cm-gallery">
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 9/16"
-                  role="img"
-                  aria-label="Miesto pre: Záber 1"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 1</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 2"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 2</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 3"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 3</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 9/16"
-                  role="img"
-                  aria-label="Miesto pre: Záber 4"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 4</span>
-                  </div>
-                </div>
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt2-zaber1.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt2-zaber2.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt2-zaber3.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt2-zaber4.jpg" alt="" loading="lazy" />
               </div>
             </section>
             <section class="cm-slide" data-cm-slide="2" hidden>
-              <div
-                class="ph ph-video"
-                style="aspect-ratio: 16/9"
-                role="img"
-                aria-label="Miesto pre: Celé video: Vlastný projekt"
-              >
-                <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                <div class="ph-body">
-                  <span class="ph-kind">VIDEO</span>
-                  <span class="ph-label">Celé video: Vlastný projekt</span>
-                  <span class="ph-spec">16:9 · prehrávanie po kliknutí · Vimeo / R2 / Bunny</span>
-                </div>
-              </div>
+              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt3.mp4" poster="img/projekt3.jpg" preload="none" controls playsinline></video>
               <div class="cm-body">
                 <div>
-                  <p class="case-meta mono">[Dokument / krátky film] · Autorská tvorba</p>
-                  <h3 class="cm-title display">[Názov tvojho projektu]</h3>
-                  <p class="cm-story">
-                    [Prečo si ho natočil a čo ťa naučil. Pri vlastných projektoch je osobný príbeh silnejší
-                    ako čísla.]
-                  </p>
+                  <p class="tags">Natáčanie, Strih, Sociálne siete</p>
+                  <h3 class="cm-title display">[Konferencia / otvorenie / firemné podujatie]</h3>
+                  <p class="cm-story">[Detail zo zákulisia.]</p>
                 </div>
                 <dl class="case-dl">
+                  <div>
+                    <dt>Klient</dt>
+                    <dd>[Názov klienta], 2025</dd>
+                  </div>
+                  <div>
+                    <dt>Problém</dt>
+                    <dd>[Čo chcel klient z eventu mať.]</dd>
+                  </div>
+                  <div>
+                    <dt>Riešenie</dt>
+                    <dd>[Ako si to natočil a v akých formátoch odovzdal.]</dd>
+                  </div>
+                  <div>
+                    <dt>Výsledok</dt>
+                    <dd><strong>[X]</strong> [videní / registrácií na ďalší ročník]</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="cm-gallery">
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt3-zaber1.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber2.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber3.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt3-zaber4.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber5.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber6.jpg" alt="" loading="lazy" />
+              </div>
+            </section>
+            <section class="cm-slide" data-cm-slide="3" hidden>
+              <video class="media" style="aspect-ratio: 16/9" src="video/projekt4.mp4" poster="img/projekt4.jpg" preload="none" controls playsinline></video>
+              <div class="cm-body">
+                <div>
+                  <p class="tags">Rozhovory, Strih, Titulky</p>
+                  <h3 class="cm-title display">[Séria krátkych rozhovorov na LinkedIn]</h3>
+                  <p class="cm-story">[Detail zo zákulisia.]</p>
+                </div>
+                <dl class="case-dl">
+                  <div>
+                    <dt>Klient</dt>
+                    <dd>[Názov klienta], 2025</dd>
+                  </div>
+                  <div>
+                    <dt>Problém</dt>
+                    <dd>[Čo klient potreboval.]</dd>
+                  </div>
+                  <div>
+                    <dt>Riešenie</dt>
+                    <dd>[Čo si navrhol.]</dd>
+                  </div>
+                  <div>
+                    <dt>Výsledok</dt>
+                    <dd><strong>[X]</strong> [výsledok]</dd>
+                  </div>
+                </dl>
+              </div>
+              <div class="cm-gallery">
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt4-zaber1.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt4-zaber2.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt4-zaber3.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt4-zaber4.jpg" alt="" loading="lazy" />
+              </div>
+            </section>
+            <section class="cm-slide" data-cm-slide="4" hidden>
+              <video class="media" style="aspect-ratio: 16/9" src="video/projekt5.mp4" poster="img/projekt5.jpg" preload="none" controls playsinline></video>
+              <div class="cm-body">
+                <div>
+                  <p class="tags">Réžia, Kamera, Strih</p>
+                  <h3 class="cm-title display">[Názov tvojho projektu]</h3>
+                  <p class="cm-story">[Prečo si ho natočil a čo ťa naučil.]</p>
+                </div>
+                <dl class="case-dl">
+                  <div>
+                    <dt>Klient</dt>
+                    <dd>Vlastný projekt, 2024</dd>
+                  </div>
                   <div>
                     <dt>Problém</dt>
                     <dd>[O čom to je, jednou vetou.]</dd>
@@ -729,139 +536,28 @@
                   </div>
                   <div>
                     <dt>Výsledok</dt>
-                    <dd><strong>[X tis.]</strong> [videní / výber na festival / ocenenie]</dd>
+                    <dd><strong>[X tis.]</strong> [videní / festival / ocenenie]</dd>
                   </div>
                 </dl>
               </div>
               <div class="cm-gallery">
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 9/16"
-                  role="img"
-                  aria-label="Miesto pre: Záber 1"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 1</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 2"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 2</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 3"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 3</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 9/16"
-                  role="img"
-                  aria-label="Miesto pre: Záber 4"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 4</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 5"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 5</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 6"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 6</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 9/16"
-                  role="img"
-                  aria-label="Miesto pre: Záber 7"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 7</span>
-                  </div>
-                </div>
-                <div
-                  class="ph ph-image"
-                  style="aspect-ratio: 16/9"
-                  role="img"
-                  aria-label="Miesto pre: Záber 8"
-                >
-                  <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                  ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                  <div class="ph-body">
-                    <span class="ph-kind">FOTO</span>
-                    <span class="ph-label">Záber 8</span>
-                  </div>
-                </div>
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt5-zaber1.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber2.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber3.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt5-zaber4.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber5.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber6.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt5-zaber7.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber8.jpg" alt="" loading="lazy" />
               </div>
             </section>
           </dialog>
-          <aside class="note">
-            <span class="note-tag">Yablonski · Serial position + Von Restorff</span>
-            <span class="note-text">
-              Najsilnejší projekt ide prvý a je najväčší. Čísla vo výsledku sú jediný veľký text v karte,
-              preto ich oko nájde ako prvé. Bez čísla radšej uveď citát klienta.
-            </span>
-          </aside>
-          <aside class="note">
-            <span class="note-tag">Detail projektu · inšpirácia dotoonystudio.sk</span>
-            <span class="note-text">
-              Klik na projekt otvorí detail s celým videom, zábermi a príbehom zo zákulisia. Karta ostane
-              stručná (Hickov zákon), kto chce viac, klikne. Príbeh („produkt som si najprv vyskúšal") predáva
-              prístup lepšie ako zoznam služieb.
-            </span>
-          </aside>
 
           <div class="tv-strip">
             <div>
-              <p class="eyebrow">Z televíznej praxe</p>
+              <h3 class="tv-title">Z televíznej praxe</h3>
               <p class="muted">
-                [Krátky zostrih tvojej práce pre TV Markíza – len ak máš súhlas na použitie materiálu.]
+                [Krátky zostrih tvojej práce pre TV Markíza. Len ak máš súhlas na použitie materiálu.]
               </p>
             </div>
             <div
@@ -875,384 +571,136 @@
               <div class="ph-body">
                 <span class="ph-kind">VIDEO</span>
                 <span class="ph-label">TV ukážka (so súhlasom)</span>
-                <span class="ph-spec">16:9 · 30–45 s</span>
+                <span class="ph-spec">16:9, 30–45 s</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ───────── 5. PONUKA / CENNÍK ───────── -->
+      <!-- ───────── 5. CENNÍK ───────── -->
       <section class="section" id="ponuka">
         <div class="container">
           <div class="section-head">
-            <h2 class="display h2">Tri spôsoby spolupráce</h2>
-            <p class="lead muted">
-              Ceny sú orientačné. Pevnú sumu dostanete do 24 hodín po 20-minútovom calle.
-            </p>
+            <h2 class="display h2">Cenník</h2>
+            <p class="lead muted">Ceny sú orientačné. Pevnú sumu pošlem do 24 hodín po krátkom hovore.</p>
           </div>
 
           <div class="packages">
             <article class="package">
+              <p class="package-flag"> </p>
               <h3 class="package-name">Sociálne siete</h3>
-              <p class="package-for">Pre firmy, ktoré chcú pravidelný obsah bez vlastného tímu.</p>
+              <p class="package-for muted">Pravidelný obsah bez vlastného tímu.</p>
               <p class="price">
-                <span class="price-note">od</span>
-                <span class="display price-value">490</span>
-                <span class="price-cur">€</span>
+                <span class="muted">od</span> <span class="display price-value">490</span> €
               </p>
-
               <ul class="package-list">
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Pol dňa natáčania (do 4 h)
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >4 krátke videá 9:16 do 45 s
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Titulky a hudba s licenciou
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >1 kolo úprav
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Dodanie do 7 pracovných dní
-                </li>
+                <li>Pol dňa natáčania (do 4 h)</li>
+                <li>4 videá na výšku do 45 s</li>
+                <li>Titulky a hudba s licenciou</li>
+                <li>1 kolo úprav</li>
+                <li>Dodanie do 7 pracovných dní</li>
               </ul>
-              <a href="#kontakt" class="btn btn-ghost btn-block"> Chcem ponuku </a>
+
+              <a href="#kontakt" class="btn btn-line">Chcem ponuku</a>
             </article>
             <article class="package featured">
-              <p class="badge">Najčastejšia voľba</p>
+              <p class="package-flag">Najčastejšie</p>
               <h3 class="package-name">Firemné video</h3>
-              <p class="package-for">Pre web, nábor, LinkedIn a obchodné stretnutia.</p>
+              <p class="package-for muted">Na web, nábor, LinkedIn a obchodné stretnutia.</p>
               <p class="price">
-                <span class="price-note">od</span>
-                <span class="display price-value">1 190</span>
-                <span class="price-cur">€</span>
+                <span class="muted">od</span> <span class="display price-value">1 190</span> €
               </p>
-              <p class="anchor">Pri samostatnom objednaní 1 690 €</p>
               <ul class="package-list">
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Scenár a plán natáčania
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >1 natáčací deň (do 8 h), svetlo a mikroporty
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Hlavné video 2–3 min s farebnou korekciou
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Bonus: 3 vertikálne zostrihy na sociálne siete
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >2 kolá úprav
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Finálne video do 10 pracovných dní
-                </li>
+                <li>Scenár a plán natáčania</li>
+                <li>1 natáčací deň (do 8 h), svetlo a mikroporty</li>
+                <li>Hlavné video 2–3 min s farebnou korekciou a titulkami</li>
+                <li>3 zostrihy na výšku pre sociálne siete</li>
+                <li>2 kolá úprav</li>
+                <li>Finálna verzia do 10 pracovných dní</li>
               </ul>
-              <a href="#kontakt" class="btn btn-invert btn-block"> Chcem ponuku </a>
+              <p class="package-extra">Zostrihy na výšku sú v cene. Samostatne by stáli 500 €.</p>
+              <a href="#kontakt" class="btn btn-primary">Chcem ponuku</a>
             </article>
             <article class="package">
+              <p class="package-flag"> </p>
               <h3 class="package-name">Kampaň a spot</h3>
-              <p class="package-for">Pre reklamu online aj v TV, s väčším štábom.</p>
+              <p class="package-for muted">Reklama online aj v TV, s väčším štábom.</p>
               <p class="price">
-                <span class="price-note">od</span>
-                <span class="display price-value">2 500</span>
-                <span class="price-cur">€</span>
+                <span class="muted">od</span> <span class="display price-value">2 500</span> €
               </p>
-
               <ul class="package-list">
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Koncept a scenár na mieru
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Štáb, casting a lokácie podľa potreby
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Formáty pre TV, YouTube a sociálne siete
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Licencia na reklamné použitie
-                </li>
-                <li>
-                  <span class="check"
-                    ><svg viewBox="0 0 16 16" aria-hidden="true">
-                      <path
-                        d="M3 8.5l3 3 7-7"
-                        fill="none"
-                        stroke="currentColor"
-                        stroke-width="1.6"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      /></svg></span
-                  >Cena individuálne podľa rozsahu
-                </li>
+                <li>Koncept a scenár na mieru</li>
+                <li>Štáb, casting a lokácie podľa potreby</li>
+                <li>Formáty pre TV, YouTube a sociálne siete</li>
+                <li>Licencia na reklamné použitie</li>
+                <li>Cena podľa rozsahu</li>
               </ul>
-              <a href="#kontakt" class="btn btn-ghost btn-block"> Chcem ponuku </a>
+
+              <a href="#kontakt" class="btn btn-line">Chcem ponuku</a>
             </article>
           </div>
 
           <div class="offer-foot">
             <p>
-              <strong>Natáčanie mimo Bratislavy.</strong> Bratislava a okolie do 30 km v cene. Natáčam aj inde
-              na Slovensku a v zahraničí: doprava 0,40 €/km alebo individuálna cena pri viacdňových
-              projektoch.
+              <strong>Natáčanie mimo Bratislavy.</strong> Bratislava a okolie do 30 km je v cene. Inde na
+              Slovensku a v zahraničí účtujem dopravu 0,40 €/km, pri viacdňových projektoch pripravím
+              individuálnu cenu.
             </p>
-            <p class="muted small">[Ceny sú konečné, nie som platca DPH.] / [Ceny sú bez DPH.]</p>
+            <p class="muted small">[Nie som platca DPH.] / [Ceny sú bez DPH.]</p>
           </div>
-
-          <aside class="note">
-            <span class="note-tag">Yablonski · Hickov zákon + Von Restorff</span>
-            <span class="note-text">
-              Tri balíky, nie päť: menej voľby = rýchlejšie rozhodnutie. Stredný je vizuálne odlišný, väčšina
-              ľudí si vyberie práve ten.
-            </span>
-          </aside>
-          <aside class="note">
-            <span class="note-tag">Hormozi · Grand Slam Offer</span>
-            <span class="note-text">
-              „Bonus: 3 vertikálne zostrihy" pridáva hodnotu bez zníženia ceny. Prečiarknutá kotva 1 690 €
-              ukazuje hodnotu balíka. Uveď len reálne čísla.
-            </span>
-          </aside>
-          <aside class="note">
-            <span class="note-tag">Trh Bratislava · október 2026</span>
-            <span class="note-text">
-              Velus Production: firemné video od 900 €, väčšina projektov 400–900 €. RD Pavlák: promo video
-              1–2 min 500 €, TV spot od 1 000 €. Tvoje ceny sú nad stredom trhu, odôvodnené TV praxou. Otestuj
-              ich na prvých 3–5 ponukách a uprav.
-            </span>
-          </aside>
         </div>
       </section>
 
-      <!-- ───────── 6. ZÁRUKA + KAPACITA ───────── -->
+      <!-- ───────── 6. ZÁRUKA ───────── -->
       <section class="guarantee">
         <div class="container guarantee-inner">
           <div>
-            <p class="eyebrow">Záruka</p>
-            <h2 class="display h2">Za výsledok ručím ja, nie vy.</h2>
+            <p class="kicker">Záruka</p>
+            <h2 class="display h2">Scenár schválite skôr, než zapnem kameru.</h2>
           </div>
           <div>
             <p class="lead">
-              Scenár schvaľujete ešte pred natáčaním. Ak hotové video ani po dvoch kolách úprav nebude
-              zodpovedať schválenému scenáru, vrátim vám zálohu.
+              Ak hotové video ani po dvoch kolách úprav nebude zodpovedať schválenému scenáru, vrátim vám
+              zálohu.
             </p>
             <p class="capacity">
-              <span class="rec-dot" aria-hidden="true"></span>
-              <span
-                >Beriem najviac 4 projekty mesačne, aby každý dostal plnú pozornosť. Najbližší voľný termín:
-                <strong>[november 2026]</strong>.</span
-              >
+              Mesačne beriem najviac 4 projekty. Najbližší voľný termín: <strong>[november 2026]</strong>.
             </p>
           </div>
-        </div>
-        <div class="container">
-          <aside class="note">
-            <span class="note-tag">Hormozi · Risk reversal + reálna vzácnosť</span>
-            <span class="note-text">
-              Záruka presúva riziko z klienta na teba. Daj len takú, ktorú dodržíš. Kapacitu a termín uvádzaj
-              pravdivo: falošná vzácnosť v B2B rýchlo praskne a zničí dôveru.
-            </span>
-          </aside>
         </div>
       </section>
 
       <!-- ───────── 7. POSTUP ───────── -->
       <section class="section" id="postup">
         <div class="container">
-          <div class="section-head">
-            <h2 class="display h2">Ako to prebieha</h2>
-          </div>
+          <h2 class="display h2 section-title">Postup</h2>
           <ol class="steps">
             <li class="step">
-              <span class="mono step-idx">Krok 1</span>
-              <h3 class="step-title">Úvodný call</h3>
-              <p class="step-time mono">20 min</p>
-              <p class="muted">Zistím cieľ, publikum a rozpočet. Do 24 hodín pošlem ponuku s pevnou cenou.</p>
-            </li>
-            <li class="step">
-              <span class="mono step-idx">Krok 2</span>
-              <h3 class="step-title">Scenár a príprava</h3>
-              <p class="step-time mono">3–5 dní</p>
-              <p class="muted">Napíšem scenár a plán natáčania. Schválite ho skôr, než zapneme kameru.</p>
-            </li>
-            <li class="step">
-              <span class="mono step-idx">Krok 3</span>
-              <h3 class="step-title">Natáčací deň</h3>
-              <p class="step-time mono">1 deň</p>
+              <p class="step-meta"><span>01</span><span class="muted">20 min</span></p>
+              <h3 class="step-title">Hovor</h3>
               <p class="muted">
-                Prídem s kamerou, svetlom a zvukom. Vy si vyhradíte jeden deň, zvyšok riešim ja.
+                Prejdeme cieľ, publikum a rozpočet. Do 24 hodín pošlem ponuku s pevnou cenou.
               </p>
             </li>
             <li class="step">
-              <span class="mono step-idx">Krok 4</span>
+              <p class="step-meta"><span>02</span><span class="muted">3–5 dní</span></p>
+              <h3 class="step-title">Scenár a príprava</h3>
+              <p class="muted">Napíšem scenár a plán natáčania, vy ho schválite.</p>
+            </li>
+            <li class="step">
+              <p class="step-meta"><span>03</span><span class="muted">1 deň</span></p>
+              <h3 class="step-title">Natáčanie</h3>
+              <p class="muted">Prídem s kamerou, svetlom a zvukom. Od vás treba ľudí a priestor.</p>
+            </li>
+            <li class="step">
+              <p class="step-meta"><span>04</span><span class="muted">do 10 dní</span></p>
               <h3 class="step-title">Strih a odovzdanie</h3>
-              <p class="step-time mono">do 10 dní</p>
               <p class="muted">
-                Prvú verziu máte do 7 pracovných dní. Finál vo formátoch pre web, LinkedIn, Instagram aj
-                reklamu.
+                Prvú verziu máte do 7 pracovných dní, finál vo všetkých formátoch, ktoré potrebujete.
               </p>
             </li>
           </ol>
-          <aside class="note">
-            <span class="note-tag">Yablonski · Teslerov zákon + Goal-gradient</span>
-            <span class="note-text">
-              Zložitosť (scenár, technika, strih) nesieš ty, klient vidí 4 jednoduché kroky. Číslovanie dáva
-              pocit, že cieľ je blízko.
-            </span>
-          </aside>
         </div>
       </section>
 
@@ -1260,34 +708,9 @@
       <section class="section section-alt" id="o-mne">
         <div class="container about">
           <div class="about-media">
-            <div
-              class="ph ph-image"
-              style="aspect-ratio: 4/5"
-              role="img"
-              aria-label="Miesto pre: Tvoja fotka zo setu, nie štúdiový portrét"
-            >
-              <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-              ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-              <div class="ph-body">
-                <span class="ph-kind">FOTO</span>
-                <span class="ph-label">Tvoja fotka zo setu, nie štúdiový portrét</span>
-                <span class="ph-spec">4:5 · min. 1200 px na šírku · prirodzené svetlo</span>
-              </div>
-            </div>
+            <img class="media" style="aspect-ratio: 4/5" src="img/adam.jpg" alt="Adam Somora" loading="lazy" />
             <div class="about-thumbs">
-              <div
-                class="ph ph-image"
-                style="aspect-ratio: 1/1"
-                role="img"
-                aria-label="Miesto pre: Zákulisie natáčania"
-              >
-                <span class="ph-corner tl"></span><span class="ph-corner tr"></span
-                ><span class="ph-corner bl"></span><span class="ph-corner br"></span>
-                <div class="ph-body">
-                  <span class="ph-kind">FOTO</span>
-                  <span class="ph-label">Zákulisie natáčania</span>
-                </div>
-              </div>
+              <img class="media" style="aspect-ratio: 1/1" src="img/zakulisie.jpg" alt="Zákulisie natáčania v Pompejach" loading="lazy" />
               <div
                 class="ph ph-image"
                 style="aspect-ratio: 1/1"
@@ -1304,46 +727,39 @@
             </div>
           </div>
           <div class="about-text">
-            <h2 class="display h2">Kto bude stáť za kamerou</h2>
+            <h2 class="display h2">O mne</h2>
             <p>
-              Som Adam Somora, kameraman a strihač z Bratislavy. [X rokov] som pracoval na produkciách pre TV
-              Markíza, [doplň konkrétne: spravodajstvo, relácie, reklamy]. Naučil som sa tam točiť rýchlo, pod
-              tlakom a bez druhej šance.
+              Som kameraman a strihač z Bratislavy. [X rokov] som robil na produkciách pre TV Markíza [doplň
+              konkrétne: spravodajstvo, relácie, reklamy]. Tam som sa naučil točiť rýchlo a bez možnosti
+              opakovať záber.
             </p>
             <p>
-              Popri tom robím vlastné projekty, kde si môžem dovoliť experimentovať. Firmám prinášam oboje:
-              televíznu disciplínu a nápad.
+              Popri tom robím vlastné projekty, kde skúšam veci, na ktoré v televízii nie je čas. Veľa z toho
+              sa potom dostane aj do firemných videí.
             </p>
-            <p>Nie som agentúra. S vami komunikujem priamo ja, od prvého callu po posledný export.</p>
+            <p>Komunikujete priamo so mnou, od prvého hovoru až po odovzdanie.</p>
             <dl class="gear">
               <div>
-                <dt class="mono">Kamera</dt>
+                <dt>Kamera</dt>
                 <dd>[napr. Sony FX3 / Canon C70]</dd>
               </div>
               <div>
-                <dt class="mono">Objektívy</dt>
+                <dt>Objektívy</dt>
                 <dd>[napr. 24–70 mm, 50 mm, 85 mm]</dd>
               </div>
               <div>
-                <dt class="mono">Svetlo</dt>
-                <dd>[napr. Aputure 300d + 2× tube]</dd>
+                <dt>Svetlo</dt>
+                <dd>[napr. Aputure 300d, 2× tube]</dd>
               </div>
               <div>
-                <dt class="mono">Zvuk</dt>
-                <dd>[napr. 2× bezdrôtový mikroport, shotgun]</dd>
+                <dt>Zvuk</dt>
+                <dd>[napr. 2× bezdrôtový mikroport, smerový mikrofón]</dd>
               </div>
               <div>
-                <dt class="mono">Dron</dt>
+                <dt>Dron</dt>
                 <dd>[len ak máš licenciu A1/A3]</dd>
               </div>
             </dl>
-            <aside class="note">
-              <span class="note-tag">Anti-AI · skutočná tvár</span>
-              <span class="note-text">
-                Reálne fotky zo setu a text v prvej osobe sú najsilnejší signál, že web nevyrobil generátor.
-                Žiadne stock fotky.
-              </span>
-            </aside>
           </div>
         </div>
       </section>
@@ -1351,9 +767,10 @@
       <!-- ───────── 9. REFERENCIA ───────── -->
       <section class="section">
         <div class="container narrow testimonial">
+          <p class="kicker">Slovami klienta</p>
           <blockquote>
             <p class="display quote">
-              „[Skutočný citát klienta. Ideálne o výsledku alebo o tom, aké bolo spolupracovať. 1–3 vety.]"
+              „[Skutočný citát klienta. Ideálne o výsledku alebo o tom, aké bolo spolupracovať. 1–3 vety.]“
             </p>
             <footer>
               <div
@@ -1372,45 +789,40 @@
               <span><strong>[Meno Priezvisko]</strong><br /><span class="muted">[Pozícia, Firma]</span></span>
             </footer>
           </blockquote>
-          <aside class="note">
-            <span class="note-tag">Yablonski · Peak-end rule</span>
-            <span class="note-text">
-              Silný citát tesne pred kontaktom = posledný dojem pred rozhodnutím. Vždy s menom a firmou,
-              anonymná referencia pôsobí vymyslene.
-            </span>
-          </aside>
         </div>
       </section>
 
-      <!-- ───────── 10. FAQ ───────── -->
+      <!-- ───────── 10. OTÁZKY ───────── -->
       <section class="section section-alt" id="otazky">
-        <div class="container narrow">
+        <div class="container split">
           <h2 class="display h2">Časté otázky</h2>
           <div class="faq">
             <details>
               <summary>Koľko stojí firemné video?</summary>
               <p>
-                Väčšina projektov vychádza medzi 1 190 a 2 500 €. Závisí od dĺžky, počtu lokácií a toho, či
-                treba ďalších ľudí v štábe. Pevnú cenu dostanete vopred, žiadne doplatky na konci.
+                Väčšina projektov vychádza medzi 1 190 a 2 500 €. Závisí to od dĺžky, počtu lokácií a od toho,
+                či treba ďalších ľudí v štábe. Pevnú cenu dostanete vopred a na konci nič nedoplácate.
               </p>
             </details>
             <details>
               <summary>Kto napíše scenár?</summary>
               <p>
-                Ja. Od vás potrebujem 20 minút na callu a prístup k ľuďom, ktorí vo videu budú. Scenár vám
+                Ja. Od vás potrebujem 20 minút na hovore a prístup k ľuďom, ktorí budú vo videu. Scenár vám
                 pošlem na schválenie pred natáčaním.
               </p>
             </details>
             <details>
               <summary>Môžem video použiť v platenej reklame?</summary>
               <p>
-                Áno. Hudbu vyberám s licenciou na komerčné použitie a video je po zaplatení vaše na web,
-                sociálne siete aj reklamu. Pri TV vysielaní riešime licenciu zvlášť.
+                Áno. Hudbu vyberám s licenciou na komerčné použitie a po zaplatení môžete video použiť na
+                webe, sociálnych sieťach aj v reklame. Pri TV vysielaní riešime licenciu zvlášť.
               </p>
             </details>
             <details>
               <summary>Ako dlho to celé trvá?</summary>
-              <p>Bežne 2–3 týždne od callu po finálne video. Z toho natáčanie je jeden deň.</p>
+              <p>
+                Bežne dva až tri týždne od prvého hovoru po finálne video. Samotné natáčanie trvá jeden deň.
+              </p>
             </details>
             <details>
               <summary>Točíte aj mimo Bratislavy?</summary>
@@ -1422,17 +834,11 @@
             <details>
               <summary>Ako prebieha platba?</summary>
               <p>
-                50 % záloha pri potvrdení termínu, zvyšok po odovzdaní finálneho videa. Faktúru vystavím na
-                firmu.
+                Pri potvrdení termínu platíte 50 % zálohu, zvyšok po odovzdaní finálneho videa. Faktúru
+                vystavím na firmu.
               </p>
             </details>
           </div>
-          <aside class="note">
-            <span class="note-tag">Hormozi · odstráň námietky</span>
-            <span class="note-text">
-              Každá otázka je námietka, ktorá by inak zabránila odoslaniu formulára: cena, čas, práva, platba.
-            </span>
-          </aside>
         </div>
       </section>
 
@@ -1440,27 +846,19 @@
       <section class="section contact" id="kontakt">
         <div class="container contact-inner">
           <div class="contact-intro">
-            <p class="eyebrow">Kontakt</p>
-            <h2 class="display h2">Povedzte mi, čo potrebujete.</h2>
-            <p class="lead">Tri krátke otázky, menej ako minúta. Ponuku s pevnou cenou máte do 24 hodín.</p>
+            <h2 class="display h2">Máte projekt?</h2>
+            <p class="lead">Tri otázky, necelá minúta. Ponuku s pevnou cenou pošlem do 24 hodín.</p>
             <ul class="contact-direct">
-              <li><span class="mono">E-mail</span><a href="mailto:[tvoj@email.sk]">[tvoj@email.sk]</a></li>
+              <li><span class="muted">E-mail</span><a href="mailto:[tvoj@email.sk]">[tvoj@email.sk]</a></li>
               <li>
-                <span class="mono">Telefón</span><a href="tel:[+421 9XX XXX XXX]">[+421 9XX XXX XXX]</a>
+                <span class="muted">Telefón</span><a href="tel:[+421 9XX XXX XXX]">[+421 9XX XXX XXX]</a>
               </li>
             </ul>
-            <aside class="note">
-              <span class="note-tag">Yablonski · Goal-gradient + Zeigarnik</span>
-              <span class="note-text">
-                Formulár v 3 krokoch s ukazovateľom postupu. Prvý krok je jedno kliknutie, preto ho dokončí
-                viac ľudí ako dlhý formulár naraz.
-              </span>
-            </aside>
           </div>
 
           <form class="lead-form" action="https://formspree.io/f/TVOJE_ID" method="POST" data-form novalidate>
             <div class="progress" aria-hidden="true"><span data-progress></span></div>
-            <p class="mono step-count" data-step-count>Krok 1 z 3</p>
+            <p class="step-count muted" data-step-count>Krok 1 z 3</p>
 
             <fieldset data-step="1">
               <legend>Aké video potrebujete?</legend>
@@ -1565,14 +963,14 @@
             </fieldset>
 
             <div class="form-nav">
-              <button type="button" class="btn btn-ghost" data-back hidden>Späť</button>
+              <button type="button" class="btn btn-line" data-back hidden>Späť</button>
               <button type="button" class="btn btn-primary" data-next>Pokračovať</button>
               <button type="submit" class="btn btn-primary" data-submit hidden>
                 Odoslať a získať ponuku
               </button>
             </div>
             <p class="form-msg" data-msg role="status" aria-live="polite"></p>
-            <p class="muted small form-trust">Žiadny newsletter. Údaje použijem len na odpoveď.</p>
+            <p class="muted small form-trust">Údaje použijem len na odpoveď.</p>
           </form>
         </div>
       </section>
@@ -1581,16 +979,17 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p class="brand"><span class="rec-dot" aria-hidden="true"></span>Adam Somora</p>
-        <p class="muted small">Kameraman a strihač · Bratislava</p>
+        <p class="muted small">Kameraman a strihač, Bratislava</p>
         <p class="small">
-          <a href="mailto:[tvoj@email.sk]">[tvoj@email.sk]</a> ·
-          <a href="tel:[+421 9XX XXX XXX]">[+421 9XX XXX XXX]</a>
+          <a href="mailto:[tvoj@email.sk]">[tvoj@email.sk]</a><br /><a href="tel:[+421 9XX XXX XXX]"
+            >[+421 9XX XXX XXX]</a
+          >
         </p>
-        <p class="muted small">IČO [IČO] · © 2026</p>
+        <p class="muted small">IČO [IČO]<br />© 2026</p>
+        <a href="#top" class="link-arrow small">Späť hore <span aria-hidden="true">↑</span></a>
       </div>
     </footer>
 
-    <button class="notes-toggle" type="button" aria-pressed="true" data-notes-toggle>Poznámky: zap.</button>
     <script src="script.js" defer></script>
   </body>
 </html>

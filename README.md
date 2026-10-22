@@ -19,11 +19,18 @@
 
 Návod je aj priamo na začiatku `index.html` v komentári. V skratke:
 
-- **Texty** prepisuj priamo v `index.html`. Sekcie sú označené komentármi `<!-- 1. HERO -->`, `<!-- 5. PONUKA / CENNÍK -->` atď. Vo VS Code ich nájdeš cez Ctrl/Cmd + F.
-- **Hranaté zátvorky `[ ]`** = doplň skutočný údaj.
+- **Texty** prepisuj priamo v `index.html`. Sekcie sú označené komentármi `<!-- 1. HERO -->`, `<!-- 5. CENNÍK -->` atď. Vo VS Code ich nájdeš cez Ctrl/Cmd + F.
+- **Hranaté zátvorky `[ ]`** = doplň skutočný údaj. Fakty v úvode (X rokov, 50+ projektov) tiež prepíš na skutočné čísla.
+- **Princípy a poznámky** k sekciám máš v samostatnom súbore `PRINCIPY.md`. Nedávaj ho do tohto priečinka, inak by bol po nasadení verejne dostupný na adrese /PRINCIPY.md.
 - **Placeholdery** (šrafované rámiky) sú bloky `<div class="ph ...">…</div>`. Celý blok nahraď `<video>` alebo `<img>`, príklady sú v komentári hore v `index.html`.
 - **Detail projektu** (okno po kliknutí) je v `<dialog class="case-modal">`. Texty projektu sú tam druhýkrát, uprav ich na oboch miestach.
-- **Farby** zmeníš v `styles.css` hore, napr. `--rec` je červená akcentová farba.
+- **Farby** zmeníš v `styles.css` hore, napr. `--accent` je červená akcentová farba.
+
+## Videá
+
+- `video/showreel.mp4` hrá v úvode stlmene v slučke. Zvuk sa zapína tlačidlom „Zapnúť zvuk", lebo prehliadače automatické prehrávanie so zvukom blokujú.
+- Videá projektov (`video/projekt1–5.mp4`) sa načítajú až po otvorení detailu projektu a hrajú so zvukom.
+- Každé video musí mať pod 25 MB (limit Cloudflare Pages) a pod 100 MB (limit GitHubu). Originálne `.mov` súbory sa necommitujú, rieši to `.gitignore`.
 
 ## Formulár
 
@@ -47,7 +54,6 @@ Workers & Pages → Create → Pages → Connect to Git → ten istý repozitár
 
 ## Pred spustením (checklist)
 
-- [ ] Vypnuté žlté poznámky: z `<html>` zmaž `class="notes-on"` a zmaž tlačidlo „Poznámky" na konci `index.html`
 - [ ] Všetky `[ ]` nahradené skutočnými údajmi
 - [ ] Logo Markízy len so súhlasom, inak iba text
 - [ ] Záruka a kapacita nastavené tak, aby si ich vedel dodržať
