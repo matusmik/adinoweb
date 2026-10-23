@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Po kúpe domény nahraď adamsomora.sk svojou adresou. lastmod aktualizuj pri väčšej zmene. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://adamsomora.sk/</loc>
+    <lastmod>2026-10-23</lastmod>
+    <video:video>
+      <video:thumbnail_loc>https://adamsomora.sk/img/showreel.webp</video:thumbnail_loc>
+      <video:title>Showreel 2026 – Adam Somora</video:title>
+      <video:description>Ukážka práce kameramana a strihača Adama Somoru.</video:description>
+      <video:content_loc>https://adamsomora.sk/video/showreel.mp4</video:content_loc>
+      <video:duration>15</video:duration>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://adamsomora.sk/firemne-video-bratislava</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://adamsomora.sk/naborove-video</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://adamsomora.sk/produktove-video</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+  <url>
+    <loc>https://adamsomora.sk/ochrana-osobnych-udajov</loc>
+    <lastmod>2026-10-23</lastmod>
+  </url>
+</urlset>

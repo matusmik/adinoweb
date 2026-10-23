@@ -1,0 +1,6 @@
+# Po kúpe domény nahraď adamsomora.sk svojou adresou.
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+Sitemap: https://adamsomora.sk/sitemap.xml
