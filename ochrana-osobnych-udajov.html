@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ochrana osobných údajov – Adam Somora</title>
+    <meta name="description" content="Ako spracúvam osobné údaje z kontaktného formulára a webu." />
+    <link rel="canonical" href="https://adamsomora.sk/ochrana-osobnych-udajov" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sk_SK" />
+    <meta property="og:site_name" content="Adam Somora" />
+    <meta property="og:title" content="Ochrana osobných údajov – Adam Somora" />
+    <meta property="og:image" content="https://adamsomora.sk/img/og.jpg" />
+    <meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121211" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+    <script>
+      try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="consent.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#obsah">Preskočiť na obsah</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="index.html" class="brand"><span class="rec-dot" aria-hidden="true"></span>Adam Somora</a>
+        <nav class="nav" aria-label="Hlavná navigácia"><a href="index.html#prace">Projekty</a><a href="index.html#ponuka">Cenník</a><a href="index.html#postup">Postup</a><a href="index.html#o-mne">O mne</a></nav>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="Prepnúť svetlý / tmavý režim">
+          <svg viewBox="0 0 20 20" aria-hidden="true">
+            <circle cx="10" cy="10" r="7.25" fill="none" stroke="currentColor" stroke-width="1.5"></circle>
+            <path d="M10 2.75a7.25 7.25 0 0 1 0 14.5z" fill="currentColor"></path>
+          </svg>
+        </button>
+        <a href="index.html#kontakt" class="btn btn-primary btn-sm">Získať ponuku</a>
+      </div>
+    </header>
+
+    <main id="obsah">
+      <!-- OCHRANA OSOBNÝCH ÚDAJOV: hranaté zátvorky [ ] doplň pred spustením -->
+      <article class="legal">
+        <div class="container">
+          <p class="kicker">Platné od [1. 11. 2026]</p>
+          <h1 class="display h2">Ochrana osobných údajov</h1>
+          <p class="lead muted">Stručne: údaje z formulára použijem len na to, aby som vám odpovedal a pripravil ponuku. Nepredávam ich a nepoužívam na reklamu. Návštevnosť meriam len s vaším súhlasom.</p>
+
+          <div class="legal-body">
+            <h2>Kto spracúva vaše údaje</h2>
+            <p>Prevádzkovateľom je <strong>Adam Somora</strong>, [adresa sídla / miesta podnikania], IČO: [IČO].</p>
+            <p>V otázkach osobných údajov ma kontaktujte na <a href="mailto:[tvoj@email.sk]">[tvoj@email.sk]</a> alebo na čísle [+421 9XX XXX XXX].</p>
+
+            <h2>Aké údaje spracúvam a prečo</h2>
+            <table>
+              <thead>
+                <tr><th>Situácia</th><th>Údaje</th><th>Účel a právny základ</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Vyplníte formulár alebo mi napíšete</td>
+                  <td>meno, firma, e-mail, telefón, typ videa, rozpočet, termín, miesto natáčania, text správy</td>
+                  <td>Odpoveď a príprava cenovej ponuky. Opatrenia pred uzavretím zmluvy na vašu žiadosť, čl. 6 ods. 1 písm. b) GDPR.</td>
+                </tr>
+                <tr>
+                  <td>Uzavrieme spoluprácu</td>
+                  <td>meno, firma, fakturačné údaje, kontaktné údaje</td>
+                  <td>Plnenie zmluvy (čl. 6 ods. 1 písm. b) GDPR) a vedenie účtovníctva podľa zákona (čl. 6 ods. 1 písm. c) GDPR).</td>
+                </tr>
+                <tr>
+                  <td>Súhlasíte s analytickými cookies</td>
+                  <td>anonymizované údaje o návšteve (stránky, zariadenie, približná poloha podľa IP)</td>
+                  <td>Štatistiky návštevnosti. Váš súhlas, čl. 6 ods. 1 písm. a) GDPR.</td>
+                </tr>
+                <tr>
+                  <td>Navštívite web</td>
+                  <td>technické záznamy servera (IP adresa, čas, prehliadač)</td>
+                  <td>Bezpečná prevádzka webu. Oprávnený záujem, čl. 6 ods. 1 písm. f) GDPR. Zaznamenáva ich poskytovateľ hostingu.</td>
+                </tr>
+              </tbody>
+            </table>
+            <p>Poskytnutie údajov je dobrovoľné. Bez e-mailu alebo telefónu vám však neviem odpovedať.</p>
+
+            <h2>Ako dlho údaje uchovávam</h2>
+            <ul>
+              <li>Dopyty, z ktorých nevznikla spolupráca: najviac 12 mesiacov od poslednej komunikácie.</li>
+              <li>Zmluvy a faktúry: 10 rokov, ako to vyžaduje zákon o účtovníctve.</li>
+              <li>Technické záznamy servera: podľa nastavení poskytovateľa hostingu, zvyčajne niekoľko dní až týždňov.</li>
+            </ul>
+
+            <h2>Kto má k údajom prístup</h2>
+            <p>Údaje nepredávam ani neposkytujem na marketing. Pri prevádzke webu využívam týchto poskytovateľov (sprostredkovateľov):</p>
+            <ul>
+              <li><strong>Formspree, Inc.</strong> (USA): doručenie správy z formulára na môj e-mail.</li>
+              <li><strong>Google Ireland Ltd. (Google Analytics) a Microsoft Ireland Operations Ltd. (Clarity)</strong>: štatistiky návštevnosti, len s vaším súhlasom.</li>
+              <li><strong>[Vercel Inc. (USA) / Cloudflare, Inc. (USA)]</strong>: hosting webu.</li>
+              <li><strong>[Poskytovateľ e-mailu, napr. Google Workspace]</strong>: e-mailová komunikácia.</li>
+              <li><strong>[Účtovník / účtovný softvér]</strong>: ak uzavrieme spoluprácu.</li>
+            </ul>
+            <p>Pri prenose údajov do USA sa poskytovatelia opierajú o rámec ochrany údajov EÚ – USA alebo štandardné zmluvné doložky schválené Európskou komisiou. <span class="todo">[Over pri každom poskytovateľovi v jeho zmluve o spracúvaní údajov (DPA).]</span></p>
+
+            <h2 id="cookies">Cookies a meranie návštevnosti</h2>
+            <p>Nevyhnutné údaje v prehliadači sú zapnuté vždy, aby web fungoval a zapamätal si vašu voľbu. Analytické nástroje Google Analytics a Microsoft Clarity sa spustia len s vaším súhlasom. Ukazujú mi štatistiky návštevnosti a neukladajú vaše meno ani e-mail. Údaje z nich môžu byť prenesené do USA v rámci rámca ochrany údajov EÚ – USA (Data Privacy Framework).</p>
+            <table>
+              <thead>
+                <tr><th>Názov</th><th>Poskytovateľ a účel</th><th>Platnosť</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>as_consent</td><td>Tento web. Pamätá si vašu voľbu cookies. Nevyhnutné.</td><td>6 mesiacov</td></tr>
+                <tr><td>theme</td><td>Tento web. Pamätá si svetlý alebo tmavý režim. Nevyhnutné.</td><td>kým ho nevymažete</td></tr>
+                <tr><td>_ga, _ga_*</td><td>Google Analytics. Rozlišuje návštevníkov pre štatistiky. Len so súhlasom.</td><td>2 roky</td></tr>
+                <tr><td>_clck, _clsk</td><td>Microsoft Clarity. Štatistiky a anonymizované záznamy pohybu po stránke. Len so súhlasom.</td><td>1 rok / 1 deň</td></tr>
+              </tbody>
+            </table>
+            <p>Súhlas môžete kedykoľvek zmeniť alebo odvolať: <a href="#" data-cookie-settings>Nastavenia cookies</a>.</p>
+            <p>Písma aj videá sa načítavajú priamo z tohto webu, nie od tretích strán.</p>
+
+            <h2>Vaše práva</h2>
+            <p>Máte právo:</p>
+            <ul>
+              <li>vedieť, aké údaje o vás mám, a dostať ich kópiu,</li>
+              <li>požiadať o opravu nesprávnych údajov,</li>
+              <li>požiadať o vymazanie údajov, ak ich už nepotrebujem alebo ich nesmiem ďalej uchovávať,</li>
+              <li>požiadať o obmedzenie spracúvania,</li>
+              <li>dostať údaje v strojovo čitateľnej podobe (prenosnosť),</li>
+              <li>namietať proti spracúvaniu na základe oprávneného záujmu,</li>
+              <li>kedykoľvek odvolať súhlas s analytickými cookies.</li>
+            </ul>
+            <p>Stačí mi napísať na <a href="mailto:[tvoj@email.sk]">[tvoj@email.sk]</a>. Odpoviem najneskôr do jedného mesiaca.</p>
+            <p>Ak máte pocit, že s údajmi nezaobchádzam správne, môžete podať sťažnosť na <strong>Úrad na ochranu osobných údajov Slovenskej republiky</strong>, Hraničná 12, 820 07 Bratislava 27, <a href="https://dataprotection.gov.sk">dataprotection.gov.sk</a>.</p>
+
+            <h2>Zmeny</h2>
+            <p>Ak sa spôsob spracúvania zmení, aktualizujem túto stránku a dátum platnosti hore.</p>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="brand"><span class="rec-dot" aria-hidden="true"></span>Adam Somora</p>
+        <div class="small footer-services">
+          <p class="muted">Kameraman a strihač, Bratislava</p>
+          <p><a href="firemne-video-bratislava.html">Firemné video</a></p>
+          <p><a href="naborove-video.html">Náborové video</a></p>
+          <p><a href="produktove-video.html">Produktové video</a></p>
+        </div>
+        <p class="small">
+          <a href="mailto:[tvoj@email.sk]">[tvoj@email.sk]</a><br /><a href="tel:[+421 9XX XXX XXX]">[+421 9XX XXX XXX]</a>
+        </p>
+        <div class="small footer-legal">
+          <p class="muted">IČO [IČO], © 2026</p>
+          <p><a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a></p>
+          <p><a href="#" data-cookie-settings>Nastavenia cookies</a></p>
+          <p><a href="404.html">Stránka 404</a></p>
+        </div>
+        <a href="index.html" class="link-arrow small">Na úvod <span aria-hidden="true">→</span></a>
+      </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

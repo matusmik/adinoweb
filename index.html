@@ -1,5 +1,198 @@
 <!doctype html>
-<!--
+<html lang="sk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Kameraman Bratislava – firemné a náborové videá | Adam Somora</title>
+    <meta name="description" content="Firemné, náborové a produktové videá v Bratislave a okolí. Kameraman a strihač s praxou z TV Markíza. Scenár, natáčanie aj strih, ponuka do 24 hodín." />
+    <!-- Po kúpe domény nahraď https://adamsomora.sk svojou adresou tu, v sitemap.xml a robots.txt -->
+    <link rel="canonical" href="https://adamsomora.sk/" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-video-preview:-1" />
+    <meta name="author" content="Adam Somora" />
+    <meta name="theme-color" content="#f4f3ef" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#121211" media="(prefers-color-scheme: dark)" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="sk_SK" />
+    <meta property="og:site_name" content="Adam Somora" />
+    <meta property="og:url" content="https://adamsomora.sk/" />
+    <meta property="og:title" content="Kameraman Bratislava – firemné a náborové videá" />
+    <meta property="og:description" content="Firemné, náborové a produktové videá v Bratislave a okolí. Kameraman a strihač s praxou z TV Markíza. Scenár, natáčanie aj strih, ponuka do 24 hodín." />
+    <meta property="og:image" content="https://adamsomora.sk/img/og.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Adam Somora, kameraman a strihač z Bratislavy" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="img/icons/icon-192.png" sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon" href="img/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!-- Písma: načítať hneď, aby hlavný nadpis neposkakoval -->
+    <link rel="preload" href="fonts/big-shoulders-display-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/big-shoulders-display-latin-ext-800-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="fonts/instrument-serif-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
+
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://adamsomora.sk/#web",
+      "url": "https://adamsomora.sk/",
+      "name": "Adam Somora",
+      "inLanguage": "sk"
+    },
+    {
+      "@type": "Person",
+      "@id": "https://adamsomora.sk/#adam",
+      "name": "Adam Somora",
+      "jobTitle": "Kameraman a strihač",
+      "image": "https://adamsomora.sk/img/adam.webp",
+      "url": "https://adamsomora.sk/",
+      "sameAs": []
+    },
+    {
+      "@type": "ProfessionalService",
+      "@id": "https://adamsomora.sk/#sluzba",
+      "name": "Adam Somora – firemné video",
+      "description": "Firemné, náborové a produktové videá v Bratislave a okolí. Kameraman a strihač s praxou z TV Markíza. Scenár, natáčanie aj strih, ponuka do 24 hodín.",
+      "url": "https://adamsomora.sk/",
+      "image": "https://adamsomora.sk/img/og.jpg",
+      "email": "[tvoj@email.sk]",
+      "telephone": "[+421 9XX XXX XXX]",
+      "priceRange": "€€",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Bratislava",
+        "addressCountry": "SK"
+      },
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Bratislava"
+        },
+        {
+          "@type": "Country",
+          "name": "Slovensko"
+        }
+      ],
+      "founder": {
+        "@id": "https://adamsomora.sk/#adam"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Cenník",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "name": "Sociálne siete",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": 490,
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Firemné video",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": 1190,
+              "priceCurrency": "EUR"
+            }
+          },
+          {
+            "@type": "Offer",
+            "name": "Kampaň a spot",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": 2500,
+              "priceCurrency": "EUR"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "VideoObject",
+      "name": "Showreel 2026 – Adam Somora",
+      "description": "Ukážka práce kameramana a strihača Adama Somoru.",
+      "thumbnailUrl": "https://adamsomora.sk/img/showreel.webp",
+      "uploadDate": "2026-10-23",
+      "duration": "PT15S",
+      "contentUrl": "https://adamsomora.sk/video/showreel.mp4",
+      "inLanguage": "sk"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Koľko stojí firemné video?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Väčšina projektov vychádza medzi 1 190 a 2 500 €. Závisí to od dĺžky, počtu lokácií a od toho, či treba ďalších ľudí v štábe. Pevnú cenu dostanete vopred a na konci nič nedoplácate."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Kto napíše scenár?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja. Od vás potrebujem 20 minút na hovore a prístup k ľuďom, ktorí budú vo videu. Scenár vám pošlem na schválenie pred natáčaním."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Môžem video použiť v platenej reklame?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Áno. Hudbu vyberám s licenciou na komerčné použitie a po zaplatení môžete video použiť na webe, sociálnych sieťach aj v reklame. Pri TV vysielaní riešime licenciu zvlášť."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ako dlho to celé trvá?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Bežne dva až tri týždne od prvého hovoru po finálne video. Samotné natáčanie trvá jeden deň."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Točíte aj mimo Bratislavy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Áno, po celom Slovensku aj v zahraničí. Do 30 km od Bratislavy je doprava v cene, inde ju pripočítam alebo pripravím individuálnu ponuku."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Ako prebieha platba?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pri potvrdení termínu platíte 50 % zálohu, zvyšok po odovzdaní finálneho videa. Faktúru vystavím na firmu."
+          }
+        }
+      ]
+    }
+  ]
+}
+    </script>
+    <script>
+      try {
+        const t = localStorage.getItem("theme");
+        if (t) document.documentElement.dataset.theme = t;
+      } catch {}
+    </script>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="consent.js" defer></script>
+  </head>
+  <body id="top">
+    <!--
   WEB – ADAM SOMORA
   Súbory: index.html (obsah) · styles.css (vzhľad) · script.js (správanie)
 
@@ -10,62 +203,19 @@
 
       VIDEO (showreel, stlmené v slučke):
       <video class="media" style="aspect-ratio:16/9" src="video/showreel.mp4"
-             poster="img/showreel.jpg" autoplay muted loop playsinline></video>
+             poster="img/showreel.webp" autoplay muted loop playsinline></video>
 
       VIDEO (projekt, spustí sa po kliknutí):
       <video class="media" style="aspect-ratio:16/9" src="https://tvoja-url/video.mp4"
-             poster="img/projekt1.jpg" preload="none" controls playsinline></video>
+             poster="img/projekt1.webp" preload="none" controls playsinline></video>
 
       FOTKA:
-      <img class="media" style="aspect-ratio:4/5" src="img/adam.jpg"
+      <img class="media" style="aspect-ratio:4/5" src="img/adam.webp"
            alt="Adam Somora na natáčaní" loading="lazy">
 
   • Texty projektov sú dvakrát: v zozname a v okne s detailom (<dialog>). Uprav oboje.
   • Formulár: URL z formspree.io doplň do script.js (FORM_ENDPOINT) aj do <form action="...">.
 -->
-<html lang="sk">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adam Somora – firemné video, Bratislava</title>
-    <meta
-      name="description"
-      content="Firemné, náborové a produktové videá. Kameraman a strihač s praxou z TV Markíza. Bratislava a celé Slovensko."
-    />
-    <meta property="og:title" content="Adam Somora – firemné video, Bratislava" />
-    <meta
-      property="og:description"
-      content="Firemné, náborové a produktové videá. Kameraman a strihač s praxou z TV Markíza. Bratislava a celé Slovensko."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="img/og.jpg" />
-    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap"
-      rel="stylesheet"
-    />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "ProfessionalService",
-        "name": "Adam Somora",
-        "description": "Firemné, náborové a produktové videá. Kameraman a strihač s praxou z TV Markíza. Bratislava a celé Slovensko.",
-        "areaServed": ["Bratislava", "Slovensko"],
-        "address": { "@type": "PostalAddress", "addressLocality": "Bratislava", "addressCountry": "SK" },
-        "priceRange": "€€"
-      }
-    </script>
-    <script>
-      try {
-        const t = localStorage.getItem("theme");
-        if (t) document.documentElement.dataset.theme = t;
-      } catch {}
-    </script>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body id="top">
     <a class="skip" href="#obsah">Preskočiť na obsah</a>
 
     <header class="site-header">
@@ -111,7 +261,23 @@
         <!-- SHOWREEL: placeholder nahraď <video ... autoplay muted loop playsinline> -->
         <figure class="reel">
           <div class="reel-frame">
-          <video class="media" style="aspect-ratio: 16/9" src="video/showreel.mp4" poster="img/showreel.jpg" autoplay muted loop playsinline data-reel></video>
+          <video
+            class="media"
+            style="aspect-ratio: 16/9"
+            poster="img/showreel.webp"
+            width="1280"
+            height="720"
+            muted
+            loop
+            playsinline
+            preload="metadata"
+            data-reel
+            data-inview
+            aria-label="Showreel Adama Somoru: zábery z amfiteátra v Pompejach"
+          >
+            <source src="video/showreel-mobil.mp4" type="video/mp4" media="(max-width: 700px)" />
+            <source src="video/showreel.mp4" type="video/mp4" />
+          </video>
           <button class="sound-toggle" type="button" data-sound aria-pressed="false">Zapnúť zvuk</button>
         </div>
           <figcaption class="container reel-caption">
@@ -279,7 +445,7 @@
               data-case-open="0"
               aria-label="Otvoriť projekt: [Ako sme firme pomohli nájsť ľudí do výroby]"
             >
-              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt1-nahlad.mp4" poster="img/projekt1.jpg" autoplay muted loop playsinline></video>
+              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt1-nahlad.mp4" poster="img/projekt1.webp" muted loop playsinline preload="none" data-inview aria-label="Ukážka projektu: eskalátor"></video>
             </button>
             <div class="case-lead-body">
               <div>
@@ -307,49 +473,49 @@
           <!-- Zoznam ďalších projektov (klik otvorí detail) -->
           <ol class="case-index">
             <li>
-              <button class="case-row" type="button" data-case-open="1">
+              <button class="case-row" type="button" data-preview="video/nahlad2.mp4" data-case-open="1">
                 <span class="row-thumb" aria-hidden="true">
-                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt2.jpg" alt="" loading="lazy" />
+                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt2-nahlad.webp" width="320" height="180" alt="" loading="lazy" decoding="async" />
                 </span>
-                <span class="row-name">[Produkt, ktorý treba vidieť v akcii]</span>
-                <span class="row-client muted">[Názov klienta]</span>
+                <span class="row-main"><span class="row-name">[Produkt, ktorý treba vidieť v akcii]</span><span class="row-client muted">[Názov klienta]</span></span>
                 <span class="tags row-tags">Natáčanie, Strih, 9:16 verzie</span>
+                <span class="row-result"><strong>[X %]</strong><span class="muted">[vyššia konverzia produktovej stránky]</span></span>
                 <span class="row-year muted">2026</span>
                 <span class="row-arrow" aria-hidden="true">→</span>
               </button>
             </li>
             <li>
-              <button class="case-row" type="button" data-case-open="2">
+              <button class="case-row" type="button" data-preview="video/nahlad3.mp4" data-case-open="2">
                 <span class="row-thumb" aria-hidden="true">
-                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt3.jpg" alt="" loading="lazy" />
+                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-nahlad.webp" width="320" height="180" alt="" loading="lazy" decoding="async" />
                 </span>
-                <span class="row-name">[Konferencia / otvorenie / firemné podujatie]</span>
-                <span class="row-client muted">[Názov klienta]</span>
+                <span class="row-main"><span class="row-name">[Konferencia / otvorenie / firemné podujatie]</span><span class="row-client muted">[Názov klienta]</span></span>
                 <span class="tags row-tags">Natáčanie, Strih, Sociálne siete</span>
+                <span class="row-result"><strong>[X]</strong><span class="muted">[videní / registrácií na ďalší ročník]</span></span>
                 <span class="row-year muted">2025</span>
                 <span class="row-arrow" aria-hidden="true">→</span>
               </button>
             </li>
             <li>
-              <button class="case-row" type="button" data-case-open="3">
+              <button class="case-row" type="button" data-preview="video/nahlad4.mp4" data-case-open="3">
                 <span class="row-thumb" aria-hidden="true">
-                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt4.jpg" alt="" loading="lazy" />
+                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt4-nahlad.webp" width="320" height="180" alt="" loading="lazy" decoding="async" />
                 </span>
-                <span class="row-name">[Séria krátkych rozhovorov na LinkedIn]</span>
-                <span class="row-client muted">[Názov klienta]</span>
+                <span class="row-main"><span class="row-name">[Séria krátkych rozhovorov na LinkedIn]</span><span class="row-client muted">[Názov klienta]</span></span>
                 <span class="tags row-tags">Rozhovory, Strih, Titulky</span>
+                <span class="row-result"><strong>[X tis.]</strong><span class="muted">[zhliadnutí na LinkedIn za mesiac]</span></span>
                 <span class="row-year muted">2025</span>
                 <span class="row-arrow" aria-hidden="true">→</span>
               </button>
             </li>
             <li>
-              <button class="case-row" type="button" data-case-open="4">
+              <button class="case-row" type="button" data-preview="video/nahlad5.mp4" data-case-open="4">
                 <span class="row-thumb" aria-hidden="true">
-                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt5.jpg" alt="" loading="lazy" />
+                  <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-nahlad.webp" width="320" height="180" alt="" loading="lazy" decoding="async" />
                 </span>
-                <span class="row-name">[Názov tvojho projektu]</span>
-                <span class="row-client muted">Vlastný projekt</span>
+                <span class="row-main"><span class="row-name">[Názov tvojho projektu]</span><span class="row-client muted">Vlastný projekt</span></span>
                 <span class="tags row-tags">Réžia, Kamera, Strih</span>
+                <span class="row-result"><strong>[X tis.]</strong><span class="muted">[videní / festival / ocenenie]</span></span>
                 <span class="row-year muted">2024</span>
                 <span class="row-arrow" aria-hidden="true">→</span>
               </button>
@@ -369,7 +535,7 @@
               </div>
             </div>
             <section class="cm-slide" data-cm-slide="0" hidden>
-              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt1.mp4" poster="img/projekt1.jpg" preload="none" controls playsinline></video>
+              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt1.mp4" poster="img/projekt1.webp" preload="none" controls playsinline aria-label="Celé video projektu 1"></video>
               <div class="cm-body">
                 <div>
                   <p class="tags">Scenár, Natáčanie, Strih, Color</p>
@@ -399,16 +565,16 @@
                 </dl>
               </div>
               <div class="cm-gallery">
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt1-zaber1.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber2.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber3.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt1-zaber4.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber5.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber6.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt1-zaber1.webp" alt="Záber 1 z projektu: eskalátor" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber2.webp" alt="Záber 2 z projektu: eskalátor" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber3.webp" alt="Záber 3 z projektu: eskalátor" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt1-zaber4.webp" alt="Záber 4 z projektu: eskalátor" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber5.webp" alt="Záber 5 z projektu: eskalátor" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt1-zaber6.webp" alt="Záber 6 z projektu: eskalátor" width="540" height="960" loading="lazy" decoding="async" />
               </div>
             </section>
             <section class="cm-slide" data-cm-slide="1" hidden>
-              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt2.mp4" poster="img/projekt2.jpg" preload="none" controls playsinline></video>
+              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt2.mp4" poster="img/projekt2.webp" preload="none" controls playsinline aria-label="Celé video projektu 2"></video>
               <div class="cm-body">
                 <div>
                   <p class="tags">Natáčanie, Strih, 9:16 verzie</p>
@@ -437,14 +603,14 @@
                 </dl>
               </div>
               <div class="cm-gallery">
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt2-zaber1.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt2-zaber2.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt2-zaber3.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt2-zaber4.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt2-zaber1.webp" alt="Záber 1 z projektu: Pompeje" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt2-zaber2.webp" alt="Záber 2 z projektu: Pompeje" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt2-zaber3.webp" alt="Záber 3 z projektu: Pompeje" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt2-zaber4.webp" alt="Záber 4 z projektu: Pompeje" width="540" height="960" loading="lazy" decoding="async" />
               </div>
             </section>
             <section class="cm-slide" data-cm-slide="2" hidden>
-              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt3.mp4" poster="img/projekt3.jpg" preload="none" controls playsinline></video>
+              <video class="media media-contain" style="aspect-ratio: 16/9" src="video/projekt3.mp4" poster="img/projekt3.webp" preload="none" controls playsinline aria-label="Celé video projektu 3"></video>
               <div class="cm-body">
                 <div>
                   <p class="tags">Natáčanie, Strih, Sociálne siete</p>
@@ -471,16 +637,16 @@
                 </dl>
               </div>
               <div class="cm-gallery">
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt3-zaber1.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber2.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber3.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt3-zaber4.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber5.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber6.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt3-zaber1.webp" alt="Záber 1 z projektu: bar" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber2.webp" alt="Záber 2 z projektu: bar" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber3.webp" alt="Záber 3 z projektu: bar" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt3-zaber4.webp" alt="Záber 4 z projektu: bar" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber5.webp" alt="Záber 5 z projektu: bar" width="540" height="960" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt3-zaber6.webp" alt="Záber 6 z projektu: bar" width="540" height="960" loading="lazy" decoding="async" />
               </div>
             </section>
             <section class="cm-slide" data-cm-slide="3" hidden>
-              <video class="media" style="aspect-ratio: 16/9" src="video/projekt4.mp4" poster="img/projekt4.jpg" preload="none" controls playsinline></video>
+              <video class="media" style="aspect-ratio: 16/9" src="video/projekt4.mp4" poster="img/projekt4.webp" preload="none" controls playsinline aria-label="Celé video projektu 4"></video>
               <div class="cm-body">
                 <div>
                   <p class="tags">Rozhovory, Strih, Titulky</p>
@@ -502,19 +668,19 @@
                   </div>
                   <div>
                     <dt>Výsledok</dt>
-                    <dd><strong>[X]</strong> [výsledok]</dd>
+                    <dd><strong>[X tis.]</strong> [zhliadnutí na LinkedIn za mesiac]</dd>
                   </div>
                 </dl>
               </div>
               <div class="cm-gallery">
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt4-zaber1.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt4-zaber2.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt4-zaber3.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt4-zaber4.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt4-zaber1.webp" alt="Záber 1 z projektu: rozhovory v Pompejach" width="640" height="360" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt4-zaber2.webp" alt="Záber 2 z projektu: rozhovory v Pompejach" width="640" height="360" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt4-zaber3.webp" alt="Záber 3 z projektu: rozhovory v Pompejach" width="640" height="360" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt4-zaber4.webp" alt="Záber 4 z projektu: rozhovory v Pompejach" width="640" height="360" loading="lazy" decoding="async" />
               </div>
             </section>
             <section class="cm-slide" data-cm-slide="4" hidden>
-              <video class="media" style="aspect-ratio: 16/9" src="video/projekt5.mp4" poster="img/projekt5.jpg" preload="none" controls playsinline></video>
+              <video class="media" style="aspect-ratio: 16/9" src="video/projekt5.mp4" poster="img/projekt5.webp" preload="none" controls playsinline aria-label="Celé video projektu 5"></video>
               <div class="cm-body">
                 <div>
                   <p class="tags">Réžia, Kamera, Strih</p>
@@ -541,14 +707,14 @@
                 </dl>
               </div>
               <div class="cm-gallery">
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt5-zaber1.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber2.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber3.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt5-zaber4.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber5.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber6.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 9/16" src="img/projekt5-zaber7.jpg" alt="" loading="lazy" />
-                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber8.jpg" alt="" loading="lazy" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt5-zaber1.webp" alt="Záber 1 z projektu: krátky film z Pompejí" width="640" height="360" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber2.webp" alt="Záber 2 z projektu: krátky film z Pompejí" width="640" height="360" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber3.webp" alt="Záber 3 z projektu: krátky film z Pompejí" width="640" height="360" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt5-zaber4.webp" alt="Záber 4 z projektu: krátky film z Pompejí" width="640" height="360" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber5.webp" alt="Záber 5 z projektu: krátky film z Pompejí" width="640" height="360" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber6.webp" alt="Záber 6 z projektu: krátky film z Pompejí" width="640" height="360" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 9/16" src="img/projekt5-zaber7.webp" alt="Záber 7 z projektu: krátky film z Pompejí" width="640" height="360" loading="lazy" decoding="async" />
+                <img class="media" style="aspect-ratio: 16/9" src="img/projekt5-zaber8.webp" alt="Záber 8 z projektu: krátky film z Pompejí" width="640" height="360" loading="lazy" decoding="async" />
               </div>
             </section>
           </dialog>
@@ -641,6 +807,12 @@
             </article>
           </div>
 
+          <p class="svc-links">
+            Podrobnosti podľa typu videa:
+            <a href="firemne-video-bratislava.html">firemné video</a>,
+            <a href="naborove-video.html">náborové video</a>,
+            <a href="produktove-video.html">produktové video</a>.
+          </p>
           <div class="offer-foot">
             <p>
               <strong>Natáčanie mimo Bratislavy.</strong> Bratislava a okolie do 30 km je v cene. Inde na
@@ -708,9 +880,9 @@
       <section class="section section-alt" id="o-mne">
         <div class="container about">
           <div class="about-media">
-            <img class="media" style="aspect-ratio: 4/5" src="img/adam.jpg" alt="Adam Somora" loading="lazy" />
+            <img class="media" style="aspect-ratio: 4/5" src="img/adam.webp" alt="Adam Somora" width="864" height="1080" loading="lazy" decoding="async" />
             <div class="about-thumbs">
-              <img class="media" style="aspect-ratio: 1/1" src="img/zakulisie.jpg" alt="Zákulisie natáčania v Pompejach" loading="lazy" />
+              <img class="media" style="aspect-ratio: 1/1" src="img/zakulisie.webp" alt="Zákulisie natáčania v Pompejach" width="720" height="720" loading="lazy" decoding="async" />
               <div
                 class="ph ph-image"
                 style="aspect-ratio: 1/1"
@@ -886,7 +1058,14 @@
             </fieldset>
 
             <fieldset data-step="2">
-              <legend>Rozpočet a termín</legend>
+              <legend>Rozsah, rozpočet a termín</legend>
+              <p class="field-label">Doplnky <span class="muted">(nepovinné)</span></p>
+              <div class="chips">
+                <label class="chip"><input type="checkbox" name="doplnky" value="Dron" /><span>Dron</span></label>
+                <label class="chip"><input type="checkbox" name="doplnky" value="Ďalšia lokácia" /><span>Ďalšia lokácia</span></label>
+                <label class="chip"><input type="checkbox" name="doplnky" value="Anglická verzia" /><span>Anglická verzia</span></label>
+                <label class="chip"><input type="checkbox" name="doplnky" value="Viac zostrihov na výšku" /><span>Viac zostrihov na výšku</span></label>
+              </div>
               <p class="field-label">Približný rozpočet</p>
               <div class="chips">
                 <label class="chip"
@@ -962,6 +1141,15 @@
               />
             </fieldset>
 
+            <!-- Orientačná cena: počíta sa v script.js (CENNIK) -->
+            <div class="estimate" data-estimate hidden aria-live="polite">
+              <p class="estimate-label">Orientačná cena</p>
+              <p class="estimate-price" data-estimate-price>–</p>
+              <p class="estimate-note" data-estimate-note></p>
+              <p class="estimate-small">Pevnú cenu pošlem do 24 hodín po krátkom hovore.</p>
+              <input type="hidden" name="orientacna_cena" value="" />
+            </div>
+
             <div class="form-nav">
               <button type="button" class="btn btn-line" data-back hidden>Späť</button>
               <button type="button" class="btn btn-primary" data-next>Pokračovať</button>
@@ -970,7 +1158,7 @@
               </button>
             </div>
             <p class="form-msg" data-msg role="status" aria-live="polite"></p>
-            <p class="muted small form-trust">Údaje použijem len na odpoveď.</p>
+            <p class="muted small form-trust">Údaje použijem len na odpoveď. <a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a></p>
           </form>
         </div>
       </section>
@@ -979,13 +1167,23 @@
     <footer class="site-footer">
       <div class="container footer-inner">
         <p class="brand"><span class="rec-dot" aria-hidden="true"></span>Adam Somora</p>
-        <p class="muted small">Kameraman a strihač, Bratislava</p>
+        <div class="small footer-services">
+          <p class="muted">Kameraman a strihač, Bratislava</p>
+          <p><a href="firemne-video-bratislava.html">Firemné video</a></p>
+          <p><a href="naborove-video.html">Náborové video</a></p>
+          <p><a href="produktove-video.html">Produktové video</a></p>
+        </div>
         <p class="small">
           <a href="mailto:[tvoj@email.sk]">[tvoj@email.sk]</a><br /><a href="tel:[+421 9XX XXX XXX]"
             >[+421 9XX XXX XXX]</a
           >
         </p>
-        <p class="muted small">IČO [IČO]<br />© 2026</p>
+        <div class="small footer-legal">
+          <p class="muted">IČO [IČO], © 2026</p>
+          <p><a href="ochrana-osobnych-udajov.html">Ochrana osobných údajov</a></p>
+          <p><a href="#" data-cookie-settings>Nastavenia cookies</a></p>
+          <p><a href="404.html">Stránka 404</a></p>
+        </div>
         <a href="#top" class="link-arrow small">Späť hore <span aria-hidden="true">↑</span></a>
       </div>
     </footer>
